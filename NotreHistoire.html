@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Burgers</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="Photos/Burger Restaurant Logo.png" width="150" height="auto" alt="logo burgers restaurant" class="d-inline-block align-top" loading="lazy">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item ps-2">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                            </li>
+                            <li class="nav-item ps-2">
+                                <a class="nav-link" href="galerie.php">Galerie</a>
+                            </li>
+                            <li class="nav-item ps-2">
+                                <a class="nav-link" href="NotreHistoire.html">Notre Histoire</a>
+                            </li>
+                            <li class="nav-item ps-2">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item ps-2">
+                                <a class="nav-link" href="guestbook.php">Guestbook</a>
+                            </li>
+                              <li class="nav-item ps-2">
+                                <a class="nav-link" href="gestion2.php">Gestion</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="row my-2">
+            <div class="jumbotron bg-light">
+                <h1 style="text-align: center; color: brown; padding: 20px;">Notre Histoire</h1>      
+            </div>
+        </div>
+        <div class="row">
+            <div class="jumbotron">
+                <h1 style="text-align: center; color: white; padding: 20px;">-</h1>      
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 d-md-flex justify-content-md-center">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                            <img src="Photos/chef2.jpg" class="img-fluid rounded-start" alt="chef">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">"30 ans d'expérience..."</h5>
+                                <p class="card-text">Nos chefs Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum rerum fuga fugiat nisi aspernatur numquam odit omnis, asperiores iste suscipit porro sed vel ipsa, est perspiciatis aperiam voluptatum debitis minima.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 d-md-flex justify-content-md-center">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                            <img src="Photos/chef1.jpg" class="img-fluid rounded-start" alt="chef">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">Qualité </h5>
+                                <p class="card-text">Nos chefs Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum rerum fuga fugiat nisi aspernatur numquam odit omnis, asperiores iste suscipit porro sed vel ipsa, est perspiciatis aperiam voluptatum debitis minima.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <h2 style="color: brown; text-align: center;">Nous trouver en Belgique:</h2>
+            <div class="row w-100">
+                <div class="col-lg-6 my-4"><!--Accordéon-->
+                    <div>
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                <button class="accordion-button btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                <p class="text-dark">Bruxelles 1000</p>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body">
+                                    <ul style="list-style-type: none;"><li><i class="fa fa-map-marker px-2" aria-hidden="true" style="font-size: 30px; color: brown;"></i><span style="font-size: 30px;">Adresse:</span></li></ul>
+                                    <p>Rue de la République 007, Belgique</p>
+                                    <ul style="list-style-type: none;"><li><i class="fa fa-clock-o px-2" aria-hidden="true" style="font-size: 30px; color: brown;"></i><span style="font-size: 30px;">Horaire:</span></li></ul>
+                                    <table class="table">
+                                        <tr>
+                                            <td><b>Lundi à jeudi :</b></td>
+                                            <td> 11:00 - 22:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Vendredi :</b></td>
+                                            <td> 11:00 - 00:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Samedi et dimanche :</b></td>
+                                            <td > 11:00 - 00:00</td>
+                                        </tr>
+                                    </table> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <button class="accordion-button btn-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    <p class="text-dark">Bruxelles 1080</p>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                <div class="accordion-body">
+                                    <ul style="list-style-type: none;"><li><i class="fa fa-map-marker px-2" aria-hidden="true" style="font-size: 30px; color: brown;"></i><span style="font-size: 30px;">Adresse:</span></li></ul>
+                                    <p>Rue de la République 007, Belgique</p>
+                                    <ul style="list-style-type: none;"><li><i class="fa fa-clock-o px-2" aria-hidden="true" style="font-size: 30px; color: brown;"></i><span style="font-size: 30px;">Horaire:</span></li></ul>
+                                    <table class="table">
+                                        <tr>
+                                            <td><b>Lundi à jeudi :</b></td>
+                                            <td> 11:00 - 22:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Vendredi :</b></td>
+                                            <td> 11:00 - 00:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Samedi et dimanche :</b></td>
+                                            <td> 11:00 - 00:00</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                <button class="accordion-button btn-danger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    <p class="text-dark">Bruxelles 1050</p>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                <div class="accordion-body">
+                                    <ul style="list-style-type: none;"><li><i class="fa fa-map-marker px-2" aria-hidden="true" style="font-size: 30px; color: brown;"></i><span style="font-size: 30px;">Adresse:</span></li></ul>
+                                    <p>Rue de la République 007, Belgique</p>
+                                    <ul style="list-style-type: none;"><li><i class="fa fa-clock-o px-2" aria-hidden="true" style="font-size: 30px; color: brown;"></i><span style="font-size: 30px;">Horaire:</span></li></ul>
+                                    <table class="table">
+                                        <tr>
+                                            <td><b>Lundi à jeudi :</b></td>
+                                            <td> 11:00 - 22:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Vendredi :</b></td>
+                                            <td> 11:00 - 00:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Samedi et dimanche :</b></td>
+                                            <td> 11:00 - 00:00</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                                <button class="accordion-button btn-danger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                    <p class="text-dark">Anvers</p>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                                <div class="accordion-body">
+                                    <ul style="list-style-type: none;"><li><i class="fa fa-map-marker px-2" aria-hidden="true" style="font-size: 30px; color: brown;"></i><span style="font-size: 30px;">Adresse:</span></li></ul>
+                                    <p>Rue de la République 007, Belgique</p>
+                                    <ul style="list-style-type: none;"><li><i class="fa fa-clock-o px-2" aria-hidden="true" style="font-size: 30px; color: brown;"></i><span style="font-size: 30px;">Horaire:</span></li></ul>
+                                    <table class="table">
+                                        <tr>
+                                            <td><b>Lundi à jeudi :</b></td>
+                                            <td> 11:00 - 22:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Vendredi :</b></td>
+                                            <td> 11:00 - 00:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Samedi et dimanche :</b></td>
+                                            <td> 11:00 - 00:00</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                                <button class="accordion-button btn-danger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                                    <p class="text-dark">Gand</p>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                                <div class="accordion-body">
+                                    <ul style="list-style-type: none;"><li><i class="fa fa-map-marker px-2" aria-hidden="true" style="font-size: 30px; color: brown;"></i><span style="font-size: 30px;">Adresse:</span></li></ul>
+                                    <p>Rue de la République 007, Belgique</p>
+                                    <ul style="list-style-type: none;"><li><i class="fa fa-clock-o px-2" aria-hidden="true" style="font-size: 30px; color: brown;"></i><span style="font-size: 30px;">Horaire:</span></li></ul>
+                                    <table class="table">
+                                        <tr>
+                                            <td><b>Lundi à jeudi :</b></td>
+                                            <td> 11:00 - 22:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Vendredi :</b></td>
+                                            <td> 11:00 - 00:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Samedi et dimanche :</b></td>
+                                            <td> 11:00 - 00:00</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                                <button class="accordion-button btn-danger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                                    <p class="text-dark">Liège</p>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+                                <div class="accordion-body">
+                                    <ul style="list-style-type: none;"><li><i class="fa fa-map-marker px-2" aria-hidden="true" style="font-size: 30px; color: brown;"></i><span style="font-size: 30px;">Adresse:</span></li></ul>
+                                    <p>Rue de la République 007, Belgique</p>
+                                    <ul style="list-style-type: none;"><li><i class="fa fa-clock-o px-2" aria-hidden="true" style="font-size: 30px; color: brown;"></i><span style="font-size: 30px;">Horaire:</span></li></ul>
+                                    <table class="table">
+                                        <tr>
+                                            <td><b>Lundi à jeudi :</b></td>
+                                            <td> 11:00 - 22:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Vendredi :</b></td>
+                                            <td> 11:00 - 00:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Samedi et dimanche :</b></td>
+                                            <td> 11:00 - 00:00</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-6 my-4"><!--Map-->
+                    <iframe
+                    src="https://www.google.com/maps/d/u/0/embed?mid=1pY80A_YGkqLaIWsxyQabILLD9SZwFuAi&ehbc=2E312F"
+                    class="w-100" height="400" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="row my-5"><!--Bouttons-->
+            <div class="col-12 col-md-6 d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+                <a href="contact.html" class="btn btn-danger btn-lg " role="button">Nous contacter</a>
+            </div>
+            <div class="col-12 col-md-6 d-grid gap-2 d-md-flex justify-content-md-start mt-3">
+                <a href="menu.html" class="btn btn-outline-danger btn-lg" role="button">Découvrir le menu</a>
+            </div>
+        </div>     
+        <footer class="bg-light text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <div style="text-align:center;">
+                    <i class="fa fa-facebook pe-3" aria-hidden="true" style="color: brown; font-size: 25px;"></i>
+                    <i class="fa fa-instagram pe-3" aria-hidden="true" style="color: brown; font-size: 25px;"></i>
+                    <i class="fa fa-pinterest-p pe-3" aria-hidden="true" style="color: brown; font-size: 25px;"></i>
+                    <i class="fa fa-youtube-play pe-3" aria-hidden="true" style="color: brown; font-size: 25px;"></i>
+                </div>
+            </section>
+            <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+        
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: #F8F9FA; color: brown;">
+            © 2022 Copyright -
+            <a class="text-danger" href="#">Ichrak</a> - <a class="text-danger" href="#">CGU & Politique de confidentialités</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </div>
+</body>
+</html>
