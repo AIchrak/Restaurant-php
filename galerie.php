@@ -62,7 +62,7 @@
         
         <?php //error_reporting(0);?>
         <?php
-            $connectgalery = mysqli_connect('localhost', 'root','','formrestaurant2');
+            $connectgalery = mysqli_connect('localhost', 'root','','heroku_c1b2033687fa4fd');
             if($connectgalery->connect_error){
                 die('connection failed : '.$connectgalery->connect_error);
             } 

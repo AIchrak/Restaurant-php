@@ -1,6 +1,6 @@
 <?php
 $connection = mysqli_connect('localhost', 'root','');
-$db=mysqli_select_db($connection, 'formrestaurant2');
+$db=mysqli_select_db($connection, 'heroku_c1b2033687fa4fd');
 
    
     if(isset($_POST['delete'])){

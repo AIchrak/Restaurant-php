@@ -12,7 +12,7 @@
             echo "This cleaned email address is not valid. Sorry. xoxo.";
         }
 
-        // 3. execution //formrestaurant2
+        // 3. execution //heroku_c1b2033687fa4fd
         if (count($errors)> 0){
             echo "There are mistakes!";
             print_r($errors);
@@ -49,7 +49,7 @@
         $checkbox= $_POST['checkbox'];
 
         //Database connection:
-        $conn = new mysqli('localhost', 'root','','formrestaurant2');
+        $conn = new mysqli('localhost', 'root','','heroku_c1b2033687fa4fd');
         if($conn->connect_error){
             die('connection failed : '.$conn->connect_error);
         } else{
@@ -62,7 +62,7 @@
         ?>
 
 <?php
-            $connection = mysqli_connect('localhost', 'root','','formrestaurant2');
+            $connection = mysqli_connect('localhost', 'root','','heroku_c1b2033687fa4fd');
             if(isset($_POST['delete'])){
                 $id=$_POST['ID'];
                 $query="DELETE FROM bookingatable WHERE ID='$id'";
@@ -153,7 +153,7 @@ if ($uploadOk == 0) {
 </form>
 <a href="galerie.html">Gallery</a>
 <?php
-$conn = mysqli_connect('localhost', 'root','','formrestaurant2');
+$conn = mysqli_connect('localhost', 'root','','heroku_c1b2033687fa4fd');
 
 if(isset($_POST['submit'])){
     $name=$_POST['name'];

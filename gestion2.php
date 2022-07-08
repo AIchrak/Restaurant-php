@@ -1,5 +1,5 @@
 <?php //message
-$connM = new mysqli('localhost', 'root','','formrestaurant2');
+$connM = new mysqli('localhost', 'root','','heroku_c1b2033687fa4fd');
             if($connM->connect_error){
                 die('connection failed : '.$connM->connect_error);
             } else{
@@ -11,7 +11,7 @@ $connM = new mysqli('localhost', 'root','','formrestaurant2');
             } 
 ?>
 <?php //guestbook
-$conn = new mysqli('localhost', 'root','','formrestaurant2');
+$conn = new mysqli('localhost', 'root','','heroku_c1b2033687fa4fd');
 if($conn->connect_error){
     die('connection failed : '.$conn->connect_error);
 } else{
@@ -29,7 +29,7 @@ if (isset($_POST['submit3'])) {
     $tempname = $_FILES["image"]["tmp_name"];  
         $folder = "img/".$filename;   
     // connect with the database
-    $db = mysqli_connect("localhost", "root", "", "formrestaurant2"); 
+    $db = mysqli_connect("localhost", "root", "", "heroku_c1b2033687fa4fd"); 
         
         // Add the image to the "image" folder"
         if (move_uploaded_file($tempname, $folder)) {
@@ -135,7 +135,7 @@ if (isset($_POST['submit3'])) {
                 </thead>
                 <tbody>
                 <?php
-                        $connectG = mysqli_connect('localhost', 'root','','formrestaurant2');
+                        $connectG = mysqli_connect('localhost', 'root','','heroku_c1b2033687fa4fd');
                         if($connectG->connect_error){
                             die('connection failed : '.$connectG->connect_error);
                         } 
@@ -254,7 +254,7 @@ if (isset($_POST['submit3'])) {
                     </thead>
                     <tbody>
                     <?php
-                    $connectI = mysqli_connect('localhost', 'root','','formrestaurant2');
+                    $connectI = mysqli_connect('localhost', 'root','','heroku_c1b2033687fa4fd');
                     if($connectI->connect_error){
                         die('connection failed : '.$connectI->connect_error);
                     } 
@@ -316,7 +316,7 @@ if (isset($_POST['submit3'])) {
         <tbody>
         
             <?php
-            $connectM = mysqli_connect('localhost', 'root','','formrestaurant2');
+            $connectM = mysqli_connect('localhost', 'root','','heroku_c1b2033687fa4fd');
             if($connectM->connect_error){
                 die('connection failed : '.$connectM->connect_error);
             } 
