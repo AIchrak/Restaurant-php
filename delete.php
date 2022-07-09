@@ -14,6 +14,6 @@ $db=mysqli_select_db($connection, 'heroku_c1b2033687fa4fd');
             echo "<script> alert('Data Not Deleted'); </script>";
         }
     } 
-   // $connection->close();
+   // $connection->close();;;
     
 ?>
